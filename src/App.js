@@ -40,6 +40,7 @@ import AddFilm from './pages/Admin/Film/AddFilm';
           <UserTemplate exact path="/user" component={User}/>
           <UserTemplate exact path="/userEdit" component={UserEdit}/>
           <HomeTemplate exact path="/" component={Home}/>
+          <HomeTemplate exact path="/demo-react-movie" component={Home}/>
           <Route component={NotFound}/>
         </Switch>
       </BrowserRouter>

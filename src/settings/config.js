@@ -1,4 +1,4 @@
-export const domain = 'http://movie0706.cybersoft.edu.vn/api';
+export const domain = 'https://movie0706.cybersoft.edu.vn/api';
 export const groupID = 'GP14';
 export const userLogin = 'userLogin';
 // export const accessToken = JSON.parse(localStorage.getItem(userLogin)).accessToken || "";
