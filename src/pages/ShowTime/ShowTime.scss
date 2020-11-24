@@ -1,0 +1,54 @@
+@import "../../assets/scss/Helper/mixin";
+@import "../../assets/scss/Helper/variables";
+
+//
+.showTime__left {
+  position: relative;
+  .manHinh {
+    position: absolute;
+    top: 56px;
+    left: 336px;
+    
+    @include styleText($fs-2, $fw-bold, $color-white-0);
+  }
+}
+
+.showTime__Right {
+  background-color: gray;
+  margin-top: 55px;
+  .tongTien {
+    font-size: 25px;
+    font-weight: bold;
+    color: $color-white-0;
+  }
+  .tenRap {
+    @include styleText($fs-2, $fw-normal, $color-white-0);
+  }
+  .tenPhim {
+    color: $color-orange-1;
+  }
+  .gioChieu {
+    @include styleText($fs-2, $fw-normal, $color-white-0);
+  }
+}
+.ghe {
+  margin: 5px;
+  background-color: rgb(228, 209, 209);
+  border-radius: 5px;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+}
+.gheDaDat{
+ 
+  font-weight: bold;
+  background-color: blue($color: #d36464);
+  font-size: 17px;
+}
+.gheVip{
+  background-color:gray;
+}
+.gheDangDat{
+  background-color: green;
+  color: white;
+}

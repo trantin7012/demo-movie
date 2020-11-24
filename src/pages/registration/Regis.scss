@@ -1,0 +1,62 @@
+@import "../../assets/scss/Helper/mixin";
+@import "../../assets/scss/Helper/variables";
+
+.formRegis {
+  position: sticky;
+  width: 100%;
+  background-image: url(../../img/bg-img/bg2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; // cố định bg
+  color: white;
+  .form-control {
+    border: 2px solid $color-green;
+    background: none;
+    color: white;
+    font-size: 18px;
+    &:focus {
+      height: 45px;
+    }
+    option {
+      background: #040813;
+    }
+  }
+  .form__title {
+    padding-top: 30px;
+    font-weight: 600px;
+    color: white;
+  }
+  label {
+    font-size: 18px;
+  }
+  .small {
+    padding: 6px 21px;
+  }
+}
+@include responsive_576{
+  .formRegis{
+    .form__title{
+      font-size: 36px;
+    }
+  }
+}
+@include responsive_0{
+  .formRegis{
+    .form__title{
+      font-size: 36px;
+    }
+  }
+}
+@include responsive_mobie{
+    .formRegis{
+      
+      .form__title{
+        font-size: 30px;
+      }
+      .btn{
+        margin: 0 !important;
+        margin-top: 10px !important;
+      }
+    }
+    
+}

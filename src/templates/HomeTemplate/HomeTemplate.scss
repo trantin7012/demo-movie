@@ -1,0 +1,167 @@
+@import "../../assets/scss/Helper/mixin";
+@import "../../assets/scss/Helper/variables";
+.header {
+  position: sticky;
+  background-color: rgba(56, 55, 55, 0.815);
+ 
+  .nav-logo {
+    width: 75px;
+    height: 75px;
+    margin-left: 30px;
+  }
+  .nav-items {
+    .nav-item {
+        margin-right: 30px;
+     
+      .nav-link {
+        
+        @include styleText($fs-2 - 1, $fw-bold-0, $color-white-1);
+        &:hover {
+          @include styleText($fs-2 - 1, $fw-bold-0, $color-white-0);
+          transition: all .5s;
+        }
+      }
+      .nav__link {
+        height: 2px;
+        width: 0;
+        background-image: linear-gradient(to right, $color-orange-0, $color-orange-1);
+        
+      }
+      
+
+      &:hover .nav__link {
+        width: 100%;
+        transition: all .5s;
+      }
+      
+      .active{
+        color: $color-white-0 !important;
+        width: 100%;
+        
+        
+       
+    }
+    }
+
+    
+    
+  }
+}
+.icon-login {
+  font-size: 25px;
+  color: $color-white-0;
+}
+.login {
+  @include styleText($fs-1 + 2, $fw-bold-0, $color-white-1);
+  &:hover {
+    @include styleText($fs-1 + 2, $fw-bold-0, $color-white-0);
+  }
+}
+
+
+///Footer
+
+.footer{
+    background-color:#141415;
+    margin-top: 30px;
+
+    .footer__top{
+        padding: 40px 0;
+        .footer__top--about{
+            h4{
+                @include styleText($fs-3,$fw-bold-0,$color-gray-3);
+                padding-bottom: 20px;
+               
+                
+            }
+            p{
+                @include styleText($fs-0,$fw-normal,$color-gray-7);
+                letter-spacing: 2px;
+            }
+        }
+        .footer__top--news{
+            h4{
+                padding-left: 16px;
+                padding-bottom: 20px;
+                @include styleText($fs-3,$fw-bold-0,$color-gray-3);
+               
+            }
+            p{
+                padding-left: 16px;
+                i{
+                   font-size: 15px;
+                   color: $color-gray-3;
+                }
+                span{
+                    @include styleText($fs-0,$fw-normal,$color-gray-7);
+                    letter-spacing: 2px;
+                    padding-left: 10px;
+                }
+            }
+        }
+        .footer__top--contact{
+            h4{
+                padding-left: 16px;
+                padding-bottom: 20px;
+                @include styleText($fs-3,$fw-bold-0,$color-gray-3);
+            }
+            p{
+                padding-left: 16px;
+                i{
+                   font-size: 15px;
+                   color: $color-gray-3;
+                }
+                span{
+                    @include styleText($fs-0,$fw-normal,$color-gray-7);
+                    letter-spacing: 2px;
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+    .footer__bottom{
+        text-align: center;
+        padding-bottom: 20px;
+        span{
+           
+            @include styleText($fs-2,$fw-bold-0,$color-gray-3);
+            padding-right: 30px;
+        }
+        a{
+            margin-right: 15px;
+            i{
+            
+                font-size: 30px;
+                color: $color-white-0;
+                font-weight: bold;
+            
+        }
+        &:hover{
+            i{
+                color:$color-orange-0
+            }
+           
+        }
+        }
+        
+    }
+}
+@include responsive_320_991 {
+  .navbar-brand{
+    display: none;
+  }
+  .icon-login{
+    display: none;
+  }
+}
+@include responsive_mobie{
+  .navbar-brand{
+    display: none;
+  }
+  .icon-login{
+    display: none;
+  }
+}
+
+
+

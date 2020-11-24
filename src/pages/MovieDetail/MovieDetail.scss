@@ -1,0 +1,108 @@
+@import "../../assets/scss/Helper/mixin";
+@import "../../assets/scss/Helper/variables";
+
+.moviDetail {
+  background-color:burlywood;
+  background-size: cover;
+
+  .movieDetail__Img {
+    padding: 25px 0 5px 25px;
+    img {
+      width: 280px;
+      height: 400px;
+    }
+  }
+  .movieDetail__content {
+    .movieDetail__content--nameFilm {
+      @include styleText($fs-3, $fw-bold-0, $color-white-cream);
+      letter-spacing: 2px;
+    }
+    .movieDetail__content--painted {
+      @include styleText($fs-0, $fw-normal, $color-white-cream);
+      letter-spacing: 2px;
+      padding-top: 20px;
+    }
+    .movieDetail__content--text {
+      @include styleText($fs-0, $fw-bold-0, $color-white-cream);
+      padding-top: 15px;
+      margin-top: 15px;
+      letter-spacing: 1px;
+    }
+  }
+}
+@include responsive_768 {
+  .moviDetail {
+    .movieDetail__Img {
+      img {
+        width: 200px;
+        height: 300px;
+      }
+    }
+  }
+}
+@include responsive_576 {
+  .moviDetail {
+    .movieDetail__Img {
+      img {
+        width: 150px;
+        height: 270px;
+      }
+    }
+  }
+}
+@include responsive_0 {
+  .moviDetail {
+    .movieDetail__Img {
+      img {
+        width: 150px;
+        height: 250px;
+        padding-right: 5px;
+      }
+    }
+  }
+}
+@include responsive_mobie {
+  .moviDetail {
+    .movieDetail__Img {
+      img {
+        width: 115px;
+        height: 150px;
+        padding-right: 5px;
+      }
+    }
+  }
+}
+//
+
+.movieDetail__content--date {
+  color: $color-gray-4;
+  &:hover {
+    color: $color-gray-4;
+  }
+}
+.MovieDetail {
+  .MovieDetail__cumRap {
+    @include styleText($fs-2, $fw-bold-0, $color-white-0);
+    background: linear-gradient(to right, $color-orange-0, $color-orange-1);
+    border-radius: 0;
+    border: 1px solid $color-orange-0;
+    &:hover {
+      background: $color-white-0;
+      color: $color-orange-1;
+    }
+  }
+
+  .nav-link.active {
+    background: $color-white-0;
+    color: $color-orange-1;
+    border-radius: 0;
+  }
+}
+.tenRap {
+  @include styleText($fs-2, $fw-bold-0, $color-gray-4);
+}
+@include responsive_mobie{
+  .cumRap__img{
+    display: none;
+  }
+}
